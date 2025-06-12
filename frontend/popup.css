@@ -1,0 +1,53 @@
+.phishguard-popup {
+  width: 320px;
+  font-family: Arial, sans-serif;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  padding: 16px;
+}
+header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.status {
+  margin: 10px 0;
+}
+.safe { color: green; }
+.warning { color: orange; }
+.danger { color: red; }
+.summary ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.summary li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+}
+.icon {
+  margin-right: 8px;
+  font-size: 1.2em;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+button {
+  border: none;
+  background: #eee;
+  border-radius: 4px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+button:hover {
+  background: #ddd;
+}
+details {
+  margin-top: 10px;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><img src="logo.png" alt="PhishGuard Logo" width="32" height="32"/></title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="phishguard-popup">
+    <header>
+      <img src="logo.png" alt="PhishGuard Logo" width="32" height="32"/>
+      <h1>Phishing Detector</h1>
+    </header>
+    <section class="status">
+      <p>Website: <span id="domain">example.com</span></p>
+      <p>Status: <span id="overall-status" class="safe">🟢 Safe</span></p>
+    </section>
+    <section class="summary">
+      <h2>Analysis Summary</h2>
+      <ul>
+        <li><span id="icon-links" class="icon safe">✔️</span> Links: <span id="link-status">Safe</span></li>
+        <li><span id="icon-text" class="icon safe">✔️</span> Text: <span id="text-status">Safe</span></li>
+        <li><span id="icon-audio" class="icon safe">✔️</span> Audio: <span id="audio-status">Safe</span></li>
+      </ul>
+    </section>
+    <details id="details-section">
+      <summary>Details</summary>
+      <ul id="details-list">
+        <li>No suspicious links found</li>
+        <li>No phishing phrases detected</li>
+        <li>No suspicious audio detected</li>
+      </ul>
+    </details>
+    <footer>
+      <button id="rescan">🔍 Scan</button>
+    </footer>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
